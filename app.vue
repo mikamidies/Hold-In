@@ -17,7 +17,7 @@ export default {
 
   methods: {
     async getItems() {
-      const response = await axios.get('https://holdings.pythonanywhere.com/api/translations', {
+      const response = await axios.get('translations', {
         headers: {
           Language: this.$i18n.locale ? this.$i18n.locale : '',
         }

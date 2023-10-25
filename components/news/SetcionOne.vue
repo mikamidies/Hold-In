@@ -41,7 +41,7 @@ export default {
         async getItems() {
             this.loading = true;
             const { page = 1 } = this.$route.query
-            const response = await axios.get('https://holdings.pythonanywhere.com/api/news', {
+            const response = await axios.get('news', {
                 params: {
                     page: page,
                     page_size: 12,

@@ -109,7 +109,7 @@ export default {
     methods: {
         async getItems() { 
             this.loading = true;
-            const response = await axios.get('https://holdings.pythonanywhere.com/api/static_infos', {
+            const response = await axios.get('static_infos', {
                 headers: {
                     Language: this.$i18n.locale ? this.$i18n.locale : '',
                 }
@@ -130,7 +130,7 @@ export default {
 
         onSubmit() {
             this.loading - true;
-            axios.post('https://holdings.pythonanywhere.com/api/application/create', {
+            axios.post('application/create', {
                 name: this.name,
                 number: this.phone,
                 message: this.commit,

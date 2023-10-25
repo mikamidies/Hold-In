@@ -113,7 +113,7 @@ export default {
 
         async getItems() {
             this.loading = true;
-            const response = await axios.get(`https://holdings.pythonanywhere.com/api/news/${this.slug}`, {
+            const response = await axios.get(`news/${this.slug}`, {
                 headers: {
                     Language: this.$i18n.locale ? this.$i18n.locale : '',
                 }

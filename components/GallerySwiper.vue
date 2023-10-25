@@ -48,7 +48,7 @@ export default {
     methods: {
         async getItems() {
             this.loading = true;
-            const response = await axios.get('https://holdings.pythonanywhere.com/api/media', {
+            const response = await axios.get('media', {
                 params: {
                     page: 1,
                     type: 'image',
