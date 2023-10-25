@@ -48,7 +48,7 @@ export default {
     methods: {
         async getItems() {
             this.loading = true;
-            const response = await axios.get('media', {
+            const response = await axios.get(this.$config.public.apiUrl + 'media', {
                 params: {
                     page: 1,
                     type: 'image',

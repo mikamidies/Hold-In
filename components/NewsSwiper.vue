@@ -91,7 +91,7 @@ export default {
         async getItems() {
             this.loading = true;
             const { page = 1 } = this.$route.query
-            const response = await axios.get('news', {
+            const response = await axios.get(this.$config.public.apiUrl + 'news', {
                 params: {
                     page: page,
                     page_size: 10,

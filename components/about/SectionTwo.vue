@@ -40,7 +40,7 @@ export default {
     methods: {
         async getItems() {
             this.loading = true;
-            const response = await axios.get('workers', {
+            const response = await axios.get(this.$config.public.apiUrl + 'workers', {
                 headers: {
                     Language: this.$i18n.locale ? this.$i18n.locale : '',
                 }

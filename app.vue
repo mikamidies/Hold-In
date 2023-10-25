@@ -17,7 +17,7 @@ export default {
 
   methods: {
     async getItems() {
-      const response = await axios.get('translations', {
+      const response = await axios.get(this.$config.public.apiUrl + 'translations', {
         headers: {
           Language: this.$i18n.locale ? this.$i18n.locale : '',
         }

@@ -32,7 +32,7 @@ export default {
     methods: {
         async getHoldings() {
             this.loading = true;
-            const response = await axios.get('holdings', {
+            const response = await axios.get(this.$config.public.apiUrl + 'holdings', {
                 headers: {
                     Language: this.$i18n.locale ? this.$i18n.locale : '',
                 }
@@ -44,7 +44,7 @@ export default {
 
         async getBusiness() {
             this.loading = true;
-            const response = await axios.get('business', {
+            const response = await axios.get(this.$config.public.apiUrl + 'business', {
                 headers: {
                     Language: this.$i18n.locale ? this.$i18n.locale : '',
                 }

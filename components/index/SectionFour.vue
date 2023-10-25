@@ -109,7 +109,7 @@ export default {
     methods: {
         async getItems() { 
             this.loading = true;
-            const response = await axios.get('static_infos', {
+            const response = await axios.get(this.$config.public.apiUrl + 'static_infos', {
                 headers: {
                     Language: this.$i18n.locale ? this.$i18n.locale : '',
                 }

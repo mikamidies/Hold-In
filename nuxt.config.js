@@ -57,25 +57,10 @@ export default defineNuxtConfig({
     },
   },
 
-  axios: {
-    proxy: true,
-    baseURL: 'http://holdings.pythonanywhere.com/api/',
-  },
-
-  publicRuntimeConfig: {
-    axios: {
-      browserBaseURL: process.env.VITE_BASE_URL
-    }
-  },
-
-  privateRuntimeConfig: {
-    axios: {
-      baseURL: process.env.VITE_BASE_URL
-    }
-  },
-
-  env: {
-    baseUrl: 'http://holdings.pythonanywhere.com/api/'
+  runtimeConfig: {
+    public: {
+      apiUrl: "http://holdings.pythonanywhere.com/api/",
+    },
   },
 
   build: {

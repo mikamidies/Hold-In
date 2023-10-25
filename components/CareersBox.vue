@@ -61,7 +61,7 @@ export default {
 
         async getItems() {
             this.loading = true;
-            const response = await axios.get('cariers', {
+            const response = await axios.get(this.$config.public.apiUrl + 'cariers', {
                 headers: {
                     Language: this.$i18n.locale ? this.$i18n.locale : '',
                 }
