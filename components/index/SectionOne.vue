@@ -21,40 +21,17 @@
 
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0">
           <div
+            v-for="item in holdings"
+            :key="item.id"
             class="index_card flex items-center justify-center py-30 md:py-46 lg:py-64 2xl:py-90 cursor-pointer px-20"
           >
-            <p
-              class="text-white text-16 font-interfaces md:font-medium lg:font-semibold md:text-20 lg:text-24 2xl:text-28 text-center"
-            >
-              {{ text_2 }}
-            </p>
-          </div>
-          <div
-            class="index_card flex items-center justify-center py-30 md:py-46 lg:py-64 2xl:py-90 cursor-pointer px-20"
-          >
-            <p
-              class="text-white text-16 font-interfaces md:font-medium lg:font-semibold md:text-20 lg:text-24 2xl:text-28 text-center"
-            >
-              {{ text_3 }}
-            </p>
-          </div>
-          <div
-            class="index_card flex items-center justify-center py-30 md:py-46 lg:py-64 2xl:py-90 cursor-pointer px-20"
-          >
-            <p
-              class="text-white text-16 font-interfaces md:font-medium lg:font-semibold md:text-20 lg:text-24 2xl:text-28 text-center"
-            >
-              {{ text_4 }}
-            </p>
-          </div>
-          <div
-            class="index_card flex items-center justify-center py-30 md:py-46 lg:py-64 2xl:py-90 cursor-pointer px-20"
-          >
-            <p
-              class="text-white text-16 font-interfaces md:font-medium lg:font-semibold md:text-20 lg:text-24 2xl:text-28 text-center"
-            >
-              {{ text_5 }}
-            </p>
+            <a :href="item.link" target="_blank" rel="nofollow">
+              <p
+                class="text-white text-16 font-interfaces md:font-medium lg:font-semibold md:text-20 lg:text-24 2xl:text-28 text-center"
+              >
+                {{ item.title }}
+              </p>
+            </a>
           </div>
         </div>
       </div>
@@ -63,6 +40,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   data() {
     return {
@@ -72,6 +51,11 @@ export default {
       text_3: "JIP (Jahon Invest Plast)",
       text_4: "Modern City",
       text_5: "Zaprafka",
+
+      holdings: [],
+      business: [],
+      data_count: 0,
+      loading: false,
     };
   },
 
@@ -91,10 +75,56 @@ export default {
         }, 100);
       }
     },
+
+    async getHoldings() {
+      this.loading = true;
+      const response = await axios.get(
+        this.$config.public.apiUrl + "holdings",
+        {
+          headers: {
+            Language: this.$i18n.locale ? this.$i18n.locale : "",
+          },
+        }
+      );
+      this.loading = false;
+      this.holdings = response.data.results;
+      this.data_count = response.data.count;
+
+      if (!sessionStorage.getItem("holdings")) {
+        sessionStorage.setItem(
+          "holdings",
+          JSON.stringify(response.data.results)
+        );
+      }
+    },
+
+    async getBusiness() {
+      this.loading = true;
+      const response = await axios.get(
+        this.$config.public.apiUrl + "business",
+        {
+          headers: {
+            Language: this.$i18n.locale ? this.$i18n.locale : "",
+          },
+        }
+      );
+      this.loading = false;
+      this.business = response.data.results;
+      this.data_count = response.data.count;
+
+      if (!sessionStorage.getItem("business")) {
+        sessionStorage.setItem(
+          "business",
+          JSON.stringify(response.data.results)
+        );
+      }
+    },
   },
 
   mounted() {
     this.getTranslate();
+    this.getHoldings();
+    this.getBusiness();
   },
 };
 </script>
@@ -140,10 +170,23 @@ export default {
   text-shadow: 0 0 2px rgba(0, 0, 0, 1);
 }
 .grid {
-  border: 1px solid var(--grey-80, #353437);
+  /* border: 1px solid var(--grey-80, #353437); */
 }
 .index_card {
-  border-right: 1px solid var(--grey-80, #353437);
+  margin-left: -1px;
+  border: 1px solid var(--grey-80, #353437);
+  position: relative;
+  min-height: 264px;
+}
+.index_card a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 1350px) {
   .title {
