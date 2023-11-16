@@ -1,7 +1,7 @@
 <template>
   <header
     id="header"
-    class="top-0 z-50 py-15 md:py-20 xl:py-24 border-b border-b-grey_40"
+    class="top-0 z-50 py-15 md:py-20 xl:py-24"
     :class="
       $route.path == '/' || this.$route.name == 'business-slug'
         ? 'fixed'
@@ -378,5 +378,9 @@ export default {
     rgba(0, 0, 0, 0.8) 100%
   );
   background: #020105;
+}
+
+#header {
+  border-bottom: 1px solid var(--grey-80, #353437);
 }
 </style>

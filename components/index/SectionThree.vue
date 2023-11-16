@@ -1,87 +1,120 @@
 <template>
-    <section class="bg-black py-40 lg:py-60 xl:py-80 lg:pb-80 xl:pb-140 2xl:pb-160">
-        <div class="my_container">
-            <p class="text-white font-interfaces_600 font-semibold text-24 lg:text-28 xl:text-32 2xl:text-40 mb-24 xl:mb-30">{{ $t('main_text_9') }}</p>
+  <section
+    class="bg-black py-40 lg:py-60 xl:py-80 lg:pb-80 xl:pb-140 2xl:pb-160"
+  >
+    <div class="my_container">
+      <p
+        class="text-white font-interfaces_600 font-semibold text-24 lg:text-28 xl:text-32 2xl:text-40 mb-24 xl:mb-30"
+      >
+        {{ $t("main_text_9") }}
+      </p>
 
-            <!-- Gallery Swiper -->
-            <gallery-swiper />
+      <!-- Gallery Swiper -->
+      <gallery-swiper />
 
-            <!-- Bizning manzillarimiz -->
-            <div id="projects" class="max-w-1436 mx-auto space-y-32 mt-90 mb-90 lg:mb-100 xl:mb-110 2xl:mb-120">
-                <p class="text-white font-interfaces_600 font-semibold text-24 lg:text-28 xl:text-32 2xl:text-40 mb-24 lg:mb-30">{{ $t('main_text_12') }}</p>
-                <ProjectCard v-for="(item, index) in holdings" :key="index" :item="item" :link="true" :last="index == holdings.length - 1 && business.length == 0 ? true : false"></ProjectCard>
-                <ProjectCard v-for="(item, index) in business" :key="index" :item="item" :link="false" :last="index == business.length - 1 ? true : false"></ProjectCard>
-            </div>
+      <!-- Bizning manzillarimiz -->
+      <div
+        id="projects"
+        class="max-w-1436 mx-auto space-y-32 mt-90 mb-90 lg:mb-100 xl:mb-110 2xl:mb-120"
+      >
+        <p
+          class="text-white font-interfaces_600 font-semibold text-24 lg:text-28 xl:text-32 2xl:text-40 mb-24 lg:mb-30"
+        >
+          {{ $t("main_text_12") }}
+        </p>
+        <ProjectCard
+          v-for="(item, index) in holdings"
+          :key="index"
+          :item="item"
+          :link="true"
+          :last="
+            index == holdings.length - 1 && business.length == 0 ? true : false
+          "
+        ></ProjectCard>
+        <ProjectCard
+          v-for="(item, index) in business"
+          :key="index"
+          :item="item"
+          :link="false"
+          :last="index == business.length - 1 ? true : false"
+        ></ProjectCard>
+      </div>
 
-            <!-- Yangiliklar -->
-            <news-swiper />
-
-        </div>
-    </section>
+      <!-- Yangiliklar -->
+      <news-swiper />
+    </div>
+  </section>
 </template>
 
-
 <script>
-import axios from 'axios'
-import ProjectCard from './Projectcard.vue'
+import axios from "axios";
+import ProjectCard from "./Projectcard.vue";
 
 export default {
+  components: {
+    ProjectCard,
+  },
 
-    components: {
-        ProjectCard,
-    },
+  data() {
+    return {
+      holdings: [],
+      business: [],
+      data_count: 0,
+      loading: false,
+    };
+  },
 
-    data() {
-        return {
-            holdings: [],
-            business: [],
-            data_count: 0,
-            loading: false,
+  methods: {
+    async getHoldings() {
+      this.loading = true;
+      const response = await axios.get(
+        this.$config.public.apiUrl + "holdings",
+        {
+          headers: {
+            Language: this.$i18n.locale ? this.$i18n.locale : "",
+          },
         }
+      );
+      this.loading = false;
+      this.holdings = response.data.results;
+      this.data_count = response.data.count;
+
+      if (!sessionStorage.getItem("holdings")) {
+        sessionStorage.setItem(
+          "holdings",
+          JSON.stringify(response.data.results)
+        );
+      }
     },
 
-    methods: {
-        async getHoldings() {
-            this.loading = true;
-            const response = await axios.get(this.$config.public.apiUrl + 'holdings', {
-                headers: {
-                    Language: this.$i18n.locale ? this.$i18n.locale : '',
-                }
-            });
-            this.loading = false;
-            this.holdings = response.data.results;
-            this.data_count = response.data.count;
+    async getBusiness() {
+      this.loading = true;
+      const response = await axios.get(
+        this.$config.public.apiUrl + "business",
+        {
+          headers: {
+            Language: this.$i18n.locale ? this.$i18n.locale : "",
+          },
+        }
+      );
+      this.loading = false;
+      this.business = response.data.results;
+      this.data_count = response.data.count;
 
-            if(!sessionStorage.getItem('holdings')) {
-                sessionStorage.setItem('holdings', JSON.stringify(response.data.results));
-            }
-        },
-
-        async getBusiness() {
-            this.loading = true;
-            const response = await axios.get(this.$config.public.apiUrl + 'business', {
-                headers: {
-                    Language: this.$i18n.locale ? this.$i18n.locale : '',
-                }
-            });
-            this.loading = false;
-            this.business = response.data.results;
-            this.data_count = response.data.count;
-
-            if(!sessionStorage.getItem('business')) {
-                sessionStorage.setItem('business', JSON.stringify(response.data.results));
-            }
-        },
+      if (!sessionStorage.getItem("business")) {
+        sessionStorage.setItem(
+          "business",
+          JSON.stringify(response.data.results)
+        );
+      }
     },
+  },
 
-    mounted() {
-        this.getHoldings();
-        this.getBusiness();
-    }
-}
+  mounted() {
+    this.getHoldings();
+    this.getBusiness();
+  },
+};
 </script>
 
-
-<style scoped>
-
-</style>
+<style scoped></style>
