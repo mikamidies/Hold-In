@@ -50,7 +50,7 @@
               <p
                 class="text-24 md:text-26 lg:text-30 xl:text-34 2xl:text-64 font-interfaces_700 font-bold leading-140"
               >
-                {{ text_3 }}
+                {{ $t("num_1") }}
               </p>
               <img
                 class="w-22 h-22"
@@ -72,7 +72,7 @@
               <p
                 class="text-24 md:text-26 lg:text-30 xl:text-34 2xl:text-64 font-interfaces_700 font-bold leading-140"
               >
-                {{ text_4 }}
+                {{ $t("num_2") }}
               </p>
               <img
                 class="w-22 h-22"
@@ -94,7 +94,7 @@
               <p
                 class="text-24 md:text-26 lg:text-30 xl:text-34 2xl:text-64 font-interfaces_700 font-bold leading-140"
               >
-                {{ text_5 }}
+                {{ $t("num_3") }}
               </p>
               <img
                 class="w-22 h-22"
@@ -116,7 +116,7 @@
               <p
                 class="text-24 md:text-26 lg:text-30 xl:text-34 2xl:text-64 font-interfaces_700 font-bold leading-140"
               >
-                {{ text_6 }}
+                {{ $t("num_4") }}
               </p>
               <img
                 class="w-22 h-22"
@@ -132,21 +132,23 @@
       </div>
 
       <div
-        class="flex items-center justify-center w-full lg:col-span-5 min-h-200"
+        class="holder flex items-center justify-center w-full lg:col-span-5 min-h-200"
       >
+        <img class="gaffer" src="../../assets/images/logo_img.gif" alt="" />
         <div class="flex items-center gap-20">
-          <img
+          <div class="masked"></div>
+          <!-- <img
             v-if="color == 'white'"
             class="w-150 md:w-180 lg:w-180 xl:w-220 2xl:w-240"
             src="../../assets/images/logo_earth_white.png"
             alt=""
-          />
-          <img
+          /> -->
+          <!-- <img
             v-else
             class="w-150 md:w-180 lg:w-180 xl:w-220 2xl:w-240"
             src="../../assets/images/logo_earth_purple.png"
             alt=""
-          />
+          /> -->
           <img
             v-if="color == 'white'"
             class="w-180 md:w-200 lg:w-230 xl:w-280 2xl:w-300"
@@ -328,34 +330,22 @@ export default {
 </script>
 
 <style scoped>
-/* .bg {
-    width: 100%;
-    height: 100%;
-    background: url('../../assets/images/earth_bg_2.png') no-repeat center right;
-    background-size: 1100px;
+.holder {
+  position: relative;
 }
-
-
-
-
-@media (max-width: 1350px) {
-    .bg {
-        background: url('../../assets/images/earth_bg.png') no-repeat center right;
-        background-size: 900px;
-    }
+.gaffer {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%) scale(5);
+  z-index: -1;
+  opacity: 0.05;
 }
-
-@media (max-width: 1024px) {
-    .bg {
-        background: url('../../assets/images/earth_bg.png') no-repeat center right;
-        background-size: 800px;
-    }
+.masked {
+  width: 270px;
+  height: 230px;
+  background-color: #3b2bb8;
+  -webkit-mask-image: url(../../assets/images/logo_img.gif);
+  mask-image: url(../../assets/images/logo_img.gif);
 }
-
-@media (max-width: 768px) {
-    .bg {
-        background: url('../../assets/images/earth_bg.png') no-repeat center right;
-        background-size: 600px;
-    }
-} */
 </style>

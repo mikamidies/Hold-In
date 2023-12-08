@@ -1,13 +1,15 @@
 <template>
   <section class="section_one flex flex-col relative">
     <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
-      <video
-        class="w-full h-full object-cover object-center"
-        muted
-        autoplay
-        loop
-        src="../../assets/video/background.mp4"
-      ></video>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/9XIJO5inmvM?autoplay=1&mute=1&controls=0&loop=1&playlist=9XIJO5inmvM"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </div>
     <div
       class="my_container relative z-10 flex-auto pt-140 lg:pt-156 2xl:pt-180 pb-30 lg:pb-40 2xl:pb-50"
@@ -188,6 +190,15 @@ export default {
   align-items: center;
   justify-content: center;
 }
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.5);
+  pointer-events: none;
+}
 @media (max-width: 1350px) {
   .title {
     font-size: 64px;
@@ -197,6 +208,15 @@ export default {
 @media (max-width: 1024px) {
   .title {
     font-size: 48px;
+  }
+  .index_card {
+    min-height: 160px;
+  }
+  .section_one {
+    height: 70vh;
+  }
+  iframe {
+    transform: scale(2.7);
   }
 }
 

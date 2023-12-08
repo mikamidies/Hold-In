@@ -1,24 +1,25 @@
 <template>
-    <div class="py-60 bg-black">
-        <page-title :name="$t('page_title_1')" />
-        <section-one color="white" bg_color="black" />
-        <section-two></section-two>
-        <section-three></section-three>
-    </div>
+  <Head>
+    <Title> Jahon Invest Holding | {{ $t("page_name_2") }}</Title>
+  </Head>
+  <div class="py-60 bg-black">
+    <page-title :name="$t('page_title_1')" />
+    <section-one color="white" bg_color="black" />
+    <section-two></section-two>
+    <section-three></section-three>
+  </div>
 </template>
 
-
-
 <script>
-import SectionOne from '../components/index/SectionTwo.vue';
-import SectionTwo from '../components/about/SectionTwo.vue';
-import SectionThree from '../components/about/SectionThree.vue';
+import SectionOne from "../components/index/SectionTwo.vue";
+import SectionTwo from "../components/about/SectionTwo.vue";
+import SectionThree from "../components/about/SectionThree.vue";
 
 export default {
-    components: {
-        SectionOne,
-        SectionTwo,
-        SectionThree,
-    },
-}
+  components: {
+    SectionOne,
+    SectionTwo,
+    SectionThree,
+  },
+};
 </script>

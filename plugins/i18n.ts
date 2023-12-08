@@ -9,13 +9,13 @@ export default defineNuxtPlugin(({ vueApp }) => {
             uz: {
                 page_name_1: "Asosiy",
                 page_name_2: "Kompaniya haqida",
-                page_name_3: "Bizning manzillarimiz",
+                page_name_3: "Bizning yo'nalishlarimiz",
                 page_name_4: "Galereya",
                 page_name_5: "Yangiliklar",
                 page_name_6: "Kontaktlar",
                 
                 page_title_1: "Kompaniya haqida",
-                page_title_2: "Bizning manzillarimiz",
+                page_title_2: "Bizning yo'nalishlarimiz",
                 page_title_3: "Bizning Galereyamiz",
                 page_title_4: "Bizning yangiliklar",
                 page_title_5: "Biz bilan bog'lanish",
@@ -87,8 +87,13 @@ export default defineNuxtPlugin(({ vueApp }) => {
                 
                 news_text_1: "Boshqa yangiliklar",
                 developer: "Veb-sayt NDC tomonidan ishlab chiqilgan",
-                designer: "Dizayn tomonidan",
+                designer: "Developed by ",
                 count: "ta",
+                policy: '© 2023 JIP GROUP',
+                num_1: '1',
+                num_2: '2',
+                num_3: '3',
+                num_4: '4',
             },
 
 
@@ -173,8 +178,13 @@ export default defineNuxtPlugin(({ vueApp }) => {
                 
                 news_text_1: "Другие новости",
                 developer: "Сайт разработал NDC",
-                designer: "Дизайнер",
+                designer: "Сайт разработал ",
                 count: "",
+                policy: '© 2023 JIP GROUP',
+                num_1: '1',
+                num_2: '2',
+                num_3: '3',
+                num_4: '4',
             },
 
 
@@ -259,8 +269,13 @@ export default defineNuxtPlugin(({ vueApp }) => {
                 
                 news_text_1: "Other news",
                 developer: "Website developed by NDC",
-                designer: "Design by",
+                designer: "Developed by ",
                 count: "",
+                policy: '© 2023 JIP GROUP',
+                num_1: '1',
+                num_2: '2',
+                num_3: '3',
+                num_4: '4',
             }
         }
     })

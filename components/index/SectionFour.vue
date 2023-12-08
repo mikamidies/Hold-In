@@ -130,27 +130,6 @@
               </div>
 
               <div class="flex flex-col xl:flex-row gap-16">
-                <div class="w-full max-w-245 px-10 py-5 border border-grey_8">
-                  <div class="flex items-center justify-between gap">
-                    <div class="flex items-center gap-10">
-                      <input
-                        v-model="captcha"
-                        class="w-24 h-24"
-                        type="checkbox"
-                        name="recaptcha"
-                        id="recaptcha"
-                        required
-                      />
-                      <label for="recaptcha">I'm not a robot</label>
-                    </div>
-                    <img
-                      class="w-46"
-                      src="../../assets/icons/recaptcha.png"
-                      alt="recaptcha"
-                    />
-                  </div>
-                </div>
-
                 <button
                   class="flex w-full items-center justify-center gap-8 px-24 py-16 bg-purple"
                 >
@@ -223,9 +202,9 @@ export default {
     },
 
     onSubmit() {
-      this.loading - true;
-      axios
-        .post("application/create", {
+      this.loading = true;
+      this.$axios
+        .post("https://admin.jipgroup.uz/api/application/create", {
           name: this.name,
           number: this.phone,
           message: this.commit,
@@ -236,11 +215,13 @@ export default {
           this.commit = "";
           this.captcha = false;
           this.loading = false;
+
+          alert("Успешно отправлено");
         })
         .catch((error) => {
           console.log(error);
           this.loading = false;
-          alert("Error: " + error.message);
+          alert("Error");
         });
     },
   },
