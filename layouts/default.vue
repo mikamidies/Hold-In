@@ -10,6 +10,19 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'google-site-verification',
+          name: 'google-site-verification',
+          content: 'nUO7GilXBqILa-oev4NR8jg4PwBAR7cx1w_EpExPeWI'
+        }
+      ]
+    }
+  },
+
   data() {
     return {
       path: "",
