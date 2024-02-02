@@ -21,11 +21,11 @@
           {{ text_1 }}
         </p>
 
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 flexer">
           <div
             v-for="item in holdings"
             :key="item.id"
-            class="index_card flex items-center justify-center py-30 md:py-46 lg:py-64 2xl:py-90 cursor-pointer px-20"
+            class="index_card flex items-center justify-center py-30 md:py-46 lg:py-64 2xl:py-90 cursor-pointer px-20 item"
           >
             <a :href="item.link" target="_blank" rel="nofollow">
               <p
@@ -199,6 +199,14 @@ iframe {
   transform: scale(1.5);
   pointer-events: none;
 }
+.flexer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item {
+  min-width: 460px;
+}
 @media (max-width: 1350px) {
   .title {
     font-size: 64px;
@@ -206,6 +214,14 @@ iframe {
 }
 
 @media (max-width: 1024px) {
+  .flexer {
+    flex-direction: column;
+  }
+  .item {
+    min-height: unset !important;
+    min-width: unset;
+    width: 100%;
+  }
   .title {
     font-size: 48px;
   }
