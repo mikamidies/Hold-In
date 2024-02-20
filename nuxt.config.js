@@ -63,7 +63,12 @@ export default defineNuxtConfig({
 
   modules: ["@nuxtjs/i18n", "@nuxt/content", "@nuxtjs/tailwindcss"],
 
-  plugins: [],
+  plugins: [
+    {
+      src: "@/plugins/replain.js",
+      mode: "client",
+    },
+  ],
 
   compilerOptions: {
     paths: {
