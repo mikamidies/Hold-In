@@ -1,6 +1,9 @@
 <template>
   <Head>
     <Title> Jahon Invest Holding | {{ $t("page_name_1") }}</Title>
+    <Meta name="title" :content="$t('seo_index_title')" />
+    <Meta name="description" :content="$t('seo_index_desc')" />
+    <Meta name="keywords" :content="$t('seo_index_keys')" />
   </Head>
 
   <SectionOne />
@@ -21,14 +24,14 @@ export default {
     return {};
   },
 
+  methods: {},
+
   components: {
     SectionOne,
     SectionTwo,
     SectionFour,
     SectionThree,
   },
-
-  methods: {},
 
   async mounted() {},
 };
