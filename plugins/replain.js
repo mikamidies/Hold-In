@@ -1,5 +1,5 @@
 export default defineNuxtPlugin(() => {
-  window.replainSettings = { id: "e76db6dd-a5b4-4168-a0a8-1e2f4615615f" };
+  window.replainSettings = { id: "d9ff733b-8898-4795-8869-e282c8281f96" };
   (function (u) {
     var s = document.createElement("script");
     s.async = true;
