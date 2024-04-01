@@ -334,6 +334,7 @@ export default {
   width: 100%;
   transition: 0.5s;
   transition-duration: 150;
+  padding-top: 72px;
 }
 
 .lang_box {

@@ -7,6 +7,7 @@ export default defineNuxtPlugin(({ vueApp }) => {
     globalInjection: true,
     messages: {
       uz: {
+        warn_test: "Sayt test rejimida ishlamoqda",
         page_name_1: "Asosiy",
         page_name_2: "Kompaniya haqida",
         page_name_3: "Bizning yo'nalishlarimiz",
@@ -136,6 +137,7 @@ export default defineNuxtPlugin(({ vueApp }) => {
       },
 
       ru: {
+        warn_test: "Сайт работает в тестовом режиме",
         page_name_1: "Главная",
         page_name_2: "О компания",
         page_name_3: "Наши направления",
@@ -264,6 +266,7 @@ export default defineNuxtPlugin(({ vueApp }) => {
       },
 
       en: {
+        warn_test: "The site is working in test mode",
         page_name_1: "Home",
         page_name_2: "About company",
         page_name_3: "Our destinations",

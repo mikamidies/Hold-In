@@ -1,5 +1,8 @@
 <template>
   <div id="main_page" class="" :class="`bg-${bg_color} text-${color}`">
+    <div class="warn">
+      {{ $t("warn_test") }}
+    </div>
     <Header v-if="load == true"></Header>
     <div class="flex-1">
       <NuxtPage />
@@ -15,12 +18,12 @@ export default {
       title: this.title,
       meta: [
         {
-          hid: 'google-site-verification',
-          name: 'google-site-verification',
-          content: 'nUO7GilXBqILa-oev4NR8jg4PwBAR7cx1w_EpExPeWI'
-        }
-      ]
-    }
+          hid: "google-site-verification",
+          name: "google-site-verification",
+          content: "nUO7GilXBqILa-oev4NR8jg4PwBAR7cx1w_EpExPeWI",
+        },
+      ],
+    };
   },
 
   data() {
@@ -99,3 +102,16 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.warn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 12px 0;
+  background: #1878f3;
+  text-align: center;
+}
+</style>
