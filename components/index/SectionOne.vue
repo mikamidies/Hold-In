@@ -27,7 +27,13 @@
             :key="item.id"
             class="index_card flex items-center justify-center py-30 md:py-46 lg:py-64 2xl:py-90 cursor-pointer px-20 item"
           >
-            <a :href="item.link" target="_blank" rel="nofollow">
+            <a
+              :href="item.link"
+              target="_blank"
+              rel="nofollow"
+              class="flex flex-col gap-32 shit"
+            >
+              <img :src="item.icon" alt="" class="logo contain" />
               <p
                 class="text-white text-16 font-interfaces md:font-medium lg:font-semibold md:text-20 lg:text-24 2xl:text-28 text-center"
               >
@@ -233,6 +239,14 @@ iframe {
   }
   iframe {
     transform: scale(2.7);
+  }
+  .logo {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+  }
+  .shit {
+    flex-direction: row !important;
   }
 }
 

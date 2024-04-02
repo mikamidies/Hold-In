@@ -41,35 +41,46 @@
                   </p>
                 </div>
               </div>
-              <div>
-                <p class="font-interfaces text-grey_40 mb-8">
-                  {{ $t("main_text_17") }}
-                </p>
-                <div class="flex flex-wrap items-center gap-40">
-                  <a :href="data.youtube" target="_blank"
-                    ><img
-                      class="w-32 h-32"
-                      src="../../assets/icons/youtube.png"
-                      alt=""
-                  /></a>
-                  <a :href="data.facebook" target="_blank"
-                    ><img
-                      class="w-32 h-32"
-                      src="../../assets/icons/facebook.png"
-                      alt=""
-                  /></a>
-                  <a :href="data.telegram" target="_blank"
-                    ><img
-                      class="w-32 h-32"
-                      src="../../assets/icons/telegram.png"
-                      alt=""
-                  /></a>
-                  <a :href="data.instagram" target="_blank"
-                    ><img
-                      class="w-32 h-32"
-                      src="../../assets/icons/instagram.png"
-                      alt=""
-                  /></a>
+              <div class="flex flex-col gap-24">
+                <div>
+                  <p class="font-interfaces text-grey_40 mb-8">
+                    {{ $t("main_text_17") }}
+                  </p>
+                  <div class="flex flex-wrap items-center gap-40">
+                    <a :href="data.youtube" target="_blank"
+                      ><img
+                        class="w-32 h-32"
+                        src="../../assets/icons/youtube.png"
+                        alt=""
+                    /></a>
+                    <a :href="data.facebook" target="_blank"
+                      ><img
+                        class="w-32 h-32"
+                        src="../../assets/icons/facebook.png"
+                        alt=""
+                    /></a>
+                    <a :href="data.telegram" target="_blank"
+                      ><img
+                        class="w-32 h-32"
+                        src="../../assets/icons/telegram.png"
+                        alt=""
+                    /></a>
+                    <a :href="data.instagram" target="_blank"
+                      ><img
+                        class="w-32 h-32"
+                        src="../../assets/icons/instagram.png"
+                        alt=""
+                    /></a>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="font-interfaces text-grey_40 mb-8">
+                    {{ $t("inner_text_23") }}
+                  </p>
+                  <p class="text-18 font-halvar font-bold">
+                    {{ email }}
+                  </p>
                 </div>
               </div>
             </div>
@@ -199,6 +210,8 @@ export default {
         this.nbm_faks = response.data.nbm.split(",")[1];
         this.nbm_phone = response.data.nbm.split(",")[0];
       }
+
+      this.email = response.data.email;
     },
 
     onSubmit() {

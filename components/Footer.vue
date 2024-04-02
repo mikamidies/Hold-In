@@ -114,7 +114,7 @@
         class="flex items-center justify-center md:justify-between gap-40 gap-y-20 flex-wrap"
       >
         <p class="text-14 lg:text-16 2xl:text-18 font-inter text-white">
-          {{ $t("policy") }}
+          © 2024 JIP GROUP
         </p>
 
         <div class="flex items-center gap-3">
@@ -145,6 +145,8 @@ export default {
       business: [],
       nbm_faks: "",
       nbm_phone: "",
+
+      year: "",
     };
   },
 
@@ -170,6 +172,8 @@ export default {
   },
 
   mounted() {
+    this.year = new Date().getFullYear();
+
     this.getItems();
   },
 };

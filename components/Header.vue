@@ -21,25 +21,25 @@
           <!-- <img class="w-68" src="../assets/images/logo_img.gif" alt=""> -->
           <img
             v-if="color == 'white'"
-            class="w-68"
+            class="w-68 left"
             src="../assets/images/logo_earth_white.png"
             alt=""
           />
           <img
             v-else
-            class="w-68"
+            class="w-68 left"
             src="../assets/images/logo_earth_purple.png"
             alt=""
           />
           <img
             v-if="color == 'white'"
-            class="w-78"
+            class="w-78 right"
             src="../assets/images/logo_name.png"
             alt=""
           />
           <img
             v-else
-            class="w-78"
+            class="w-78 right"
             src="../assets/images/logo_name_blue.png"
             alt=""
           />
@@ -383,5 +383,14 @@ export default {
 
 #header {
   border-bottom: 1px solid var(--grey-80, #353437);
+}
+
+@media screen and (max-width: 1024px) {
+  .left {
+    width: 42px;
+  }
+  .right {
+    width: 56px;
+  }
 }
 </style>
