@@ -3,24 +3,24 @@ export default defineNuxtConfig({
 
   head() {
     return {
-      title: "Jahon Invest Holding",
+      title: "Jahon Invest Plast",
       meta: [
         { property: "type", content: "website" },
         { property: "og:type", content: "website" },
 
-        { property: "title", content: "Jahon Invest Holding" },
-        { property: "og:title", content: "Jahon Invest Holding" },
+        { property: "title", content: "Jahon Invest Plast" },
+        { property: "og:title", content: "Jahon Invest Plast" },
 
         { property: "url", content: "https://holdings.pythonanywhere.com" },
         { property: "og:url", content: "https://holdings.pythonanywhere.com" },
 
         {
           name: "keywords",
-          content: "Jahon Invest Holding, Jahon invest, Holding.",
+          content: "Jahon Invest Plast, Jahon invest, Holding.",
         },
         {
           name: "og:keywords",
-          content: "Jahon Invest Holding, Jahon invest, Holding.",
+          content: "Jahon Invest Plast, Jahon invest, Holding.",
         },
 
         {

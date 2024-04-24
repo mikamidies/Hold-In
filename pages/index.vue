@@ -1,6 +1,6 @@
 <template>
   <Head>
-    <Title> Jahon Invest Holding | {{ $t("page_name_1") }}</Title>
+    <Title> Jahon Invest Plast | {{ $t("page_name_1") }}</Title>
     <Meta name="title" :content="$t('seo_index_title')" />
     <Meta name="description" :content="$t('seo_index_desc')" />
     <Meta name="keywords" :content="$t('seo_index_keys')" />

@@ -7,7 +7,7 @@
         <div
           class="w-full h-300 md:h-500 overflow-hidden mb-24 border border-grey_8"
         >
-          <div class="w-full h-full" v-html="data_iframe"></div>
+          <div class="w-full h-full iframe" v-html="data_iframe"></div>
         </div>
 
         <div class="flex flex-col lg:flex-row flex-wrap gap-40">
@@ -312,5 +312,9 @@ input:valid + label {
   /* line-height: 12px !important; */
   /* letter-spacing: 0.5px !important; */
   background-color: transparent !important;
+}
+.iframe :deep(iframe) {
+  width: 100%;
+  height: 100%;
 }
 </style>

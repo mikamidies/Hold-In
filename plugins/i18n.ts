@@ -104,32 +104,32 @@ export default defineNuxtPlugin(({ vueApp }) => {
         num_3: "3",
         num_4: "4",
 
-        seo_index_title: "Jahon Invest Holding",
+        seo_index_title: "Jahon Invest Plast",
         seo_index_desc:
           "Jahon Invest Group-bu qurilish, turar-joy majmualarini ishlab chiqish va PVX mahsulotlari va plastmassa mahsulotlarini ishlab chiqarish bo'yicha keng qamrovli echimlarga ixtisoslashgan etakchi xolding. Biz mijozlarimizning uy-joy, sanoat va iste'mol mahsulotlariga bo'lgan ehtiyojlarini qondirish orqali zamonaviy yashash joylari, yuqori sifatli qurilish materiallari va innovatsion PVX mahsulotlarini yaratamiz. Bizning vazifamiz mijozlar bilan uzoq muddatli munosabatlarni o'rnatish va yuqori sifat va ishonchlilik standartlariga javob beradigan mahsulotlarni yaratishdir.",
         seo_index_keys:
           "qurilish, turar-joy majmualari, PVX mahsulotlar, plastik mahsulotlar, muhandislik, qurilish materiallari, infratuzilma, yashash joylari, plastik mahsulotlar, sanoat, ishlab chiqarish xoldingi, innovatsiya, sifat, ishonchlilik.",
-        seo_directions_title: "Jahon Invest Holding | Yo'nalishlar",
+        seo_directions_title: "Jahon Invest Plast | Yo'nalishlar",
         seo_directions_desc:
           "Jahon Invest Group-bu qurilish, turar-joy majmualarini ishlab chiqish va PVX mahsulotlari va plastmassa mahsulotlarini ishlab chiqarish bo'yicha keng qamrovli echimlarga ixtisoslashgan etakchi xolding. Bizning sho'ba korxonalarimiz Modern City Construct, Premium Pipe Plast va Jahon Invest Plast.",
         seo_directions_keys:
           "Modern City Construct, Premium Pipe Plast, Jahon Invest Plast, qurilish, turar-joy majmualari, PVX mahsulotlari, plastmassa mahsulotlari, muhandislik, qurilish materiallari, infratuzilma, yashash joylari, plastik mahsulotlar, sanoat, ishlab chiqarish xoldingi",
-        seo_about_title: "Jahon Invest Holding | Kompaniya haqida",
+        seo_about_title: "Jahon Invest Plast | Kompaniya haqida",
         seo_about_desc:
           "Jahon Invest Group xoldingi haqida ko'proq bilib oling - qurilish, turar-joy majmualarini ishlab chiqish, PVX mahsulotlari va plastmassa mahsulotlarini ishlab chiqarishga ixtisoslashgan etakchi korxona. Biz innovatsion texnologiyalar va professional yondashuvni birlashtirib, mijozlarimizning turli sanoat va uy-joy sohasidagi ehtiyojlarini qondiradigan yuqori sifatli va ishonchli echimlarni yaratamiz.",
         seo_about_keys:
           "Jahon Invest Group, qurilish, turar-joy majmualari, PVX mahsulotlari, plastmassa mahsulotlari, innovatsiyalar, sifat, ishonchlilik, muhandislik, sanoat, ishlab chiqish, qurilish materiallari, uy-joy qurilishi",
-        seo_gallery_title: "Jahon Invest Holding | Galereya",
+        seo_gallery_title: "Jahon Invest Plast | Galereya",
         seo_gallery_desc:
           "Jahon Invest Group xoldingi haqida ko'proq bilib oling - qurilish, turar-joy majmualarini ishlab chiqish, PVX mahsulotlari va plastmassa mahsulotlarini ishlab chiqarishga ixtisoslashgan etakchi korxona. Biz innovatsion texnologiyalar va professional yondashuvni birlashtirib, mijozlarimizning turli sanoat va uy-joy sohasidagi ehtiyojlarini qondiradigan yuqori sifatli va ishonchli echimlarni yaratamiz.",
         seo_gallery_keys:
           "Jahon Invest Group, qurilish, turar-joy majmualari, PVX mahsulotlari, plastmassa mahsulotlari, innovatsiyalar, sifat, ishonchlilik, muhandislik, sanoat, ishlab chiqish, qurilish materiallari, uy-joy qurilishi",
-        seo_news_title: "Jahon Invest Holding | Yangiliklar",
+        seo_news_title: "Jahon Invest Plast | Yangiliklar",
         seo_news_desc:
           "Jahon Invest Group xoldingidan so'nggi yangiliklar va voqealarni bilib oling. Sizga qurilish, turar-joy majmualari, PVX mahsulotlari va plastmassa mahsulotlari ishlab chiqarish bo'yicha faoliyatimiz, yangi loyihalarimiz, yutuqlarimiz va innovatsiyalarimiz haqida eng dolzarb ma'lumotlarni taqdim etish uchun yangiliklarimizni muntazam yangilab turamiz. Kompaniyaning so'nggi voqealari va muvaffaqiyatlaridan xabardor bo'lish uchun bizning yangiliklarimizni kuzatib boring.",
         seo_news_keys:
           "Jahon Invest Group yangiliklari, tadbirlari, xoldingi, qurilish, turar-joy majmualari, PVX mahsulotlari, plastmassa mahsulotlari, innovatsiyalar, loyihalar, yutuqlar, yangilanishlar",
-        seo_contacts_title: "Jahon Invest Holding | Kontaktlar",
+        seo_contacts_title: "Jahon Invest Plast | Kontaktlar",
         seo_contacts_desc:
           "Faoliyatimiz va xizmatlarimiz haqida ko'proq ma'lumot olish uchun biz bilan bog'laning. Jahon Invest Group xoldingi qurilish, uy-joy qurilishi, PVX mahsulotlari va plastmassa mahsulotlarini ishlab chiqarish bo'yicha keng ko'lamli xizmatlarni taklif etadi. Bizning aloqa ma'lumotlarimiz maslahat olish, tijorat takliflarini so'rash yoki uchrashuvni tashkil qilish uchun biz bilan bog'lanishingizga yordam beradi. Biz sizning barcha savollaringizga javob berishga va loyihalaringizni amalga oshirishda yordam berishga tayyormiz.",
         seo_contacts_keys:
@@ -233,32 +233,32 @@ export default defineNuxtPlugin(({ vueApp }) => {
         num_3: "3",
         num_4: "4",
 
-        seo_index_title: "Jahon Invest Holding",
+        seo_index_title: "Jahon Invest Plast",
         seo_index_desc:
           "Jahon Invest Group - ведущий холдинг, специализирующийся на комплексных решениях в области строительства, разработке жилых комплексов и производстве ПВХ продукции и пластмассовых изделий. Мы создаем современные жилые пространства, высококачественные строительные материалы и инновационные продукты из ПВХ, удовлетворяя потребности наших клиентов в сфере жилья, промышленности и потребительских товаров. Наша миссия - строить долгосрочные отношения с клиентами и создавать продукты, отвечающие высоким стандартам качества и надежности.",
         seo_index_keys:
           "строительство, жилые комплексы, ПВХ продукция, пластмассовые изделия, инженерные решения, строительные материалы, инфраструктура, жилые пространства, пластиковая продукция, промышленность, производственный холдинг, инновации, качество, надежность.",
-        seo_directions_title: "Jahon Invest Holding | Направления",
+        seo_directions_title: "Jahon Invest Plast | Направления",
         seo_directions_desc:
           "Jahon Invest Group - ведущий холдинг, специализирующийся на комплексных решениях в области строительства, разработке жилых комплексов и производстве ПВХ продукции и пластмассовых изделий. Наши дочерние компания - Modern City Construct, Premium Pipe Plast и Jahon Invest Plast.",
         seo_directions_keys:
           "Modern City Construct, Premium Pipe Plast, Jahon Invest Plast, строительство, жилые комплексы, ПВХ продукция, пластмассовые изделия, инженерные решения, строительные материалы, инфраструктура, жилые пространства, пластиковая продукция, промышленность, производственный холдинг",
-        seo_about_title: "Jahon Invest Holding | О компании",
+        seo_about_title: "Jahon Invest Plast | О компании",
         seo_about_desc:
           "Узнайте больше о холдинге Jahon Invest Group - ведущем предприятии, специализирующемся на строительстве, разработке жилых комплексов, производстве ПВХ продукции и пластмассовых изделий. Мы объединяем инновационные технологии и профессиональный подход для создания высококачественных и надежных решений, удовлетворяющих потребности наших клиентов в различных отраслях промышленности и жилья.",
         seo_about_keys:
           "Jahon Invest Group, строительство, жилые комплексы, ПВХ продукция, пластмассовые изделия, инновации, качество, надежность, инженерные решения, промышленность, разработка, строительные материалы, жилищное строительство",
-        seo_gallery_title: "Jahon Invest Holding | Галерея",
+        seo_gallery_title: "Jahon Invest Plast | Галерея",
         seo_gallery_desc:
           "Узнайте больше о холдинге Jahon Invest Group - ведущем предприятии, специализирующемся на строительстве, разработке жилых комплексов, производстве ПВХ продукции и пластмассовых изделий. Мы объединяем инновационные технологии и профессиональный подход для создания высококачественных и надежных решений, удовлетворяющих потребности наших клиентов в различных отраслях промышленности и жилья.",
         seo_gallery_keys:
           "Jahon Invest Group, строительство, жилые комплексы, ПВХ продукция, пластмассовые изделия, инновации, качество, надежность, инженерные решения, промышленность, разработка, строительные материалы, жилищное строительство",
-        seo_news_title: "Jahon Invest Holding | Новости",
+        seo_news_title: "Jahon Invest Plast | Новости",
         seo_news_desc:
           "Узнайте последние новости и события от холдинга Jahon Invest Group. Мы регулярно обновляем наши новости, чтобы предоставить вам самую актуальную информацию о нашей деятельности, новых проектах, достижениях и инновациях в области строительства, жилых комплексов, производства ПВХ продукции и пластмассовых изделий. Следите за нашими новостями, чтобы быть в курсе последних событий и успехов компании.",
         seo_news_keys:
           "новости, события, холдинг Jahon Invest Group, строительство, жилые комплексы, ПВХ продукция, пластмассовые изделия, инновации, проекты, достижения, обновления",
-        seo_contacts_title: "Jahon Invest Holding | Контакты",
+        seo_contacts_title: "Jahon Invest Plast | Контакты",
         seo_contacts_desc:
           "Свяжитесь с нами для получения дополнительной информации о нашей деятельности и услугах. Холдинг Jahon Invest Group предлагает широкий спектр услуг в области строительства, жилищного строительства, производства ПВХ продукции и пластмассовых изделий. Наши контактные данные помогут вам связаться с нами для получения консультации, запроса коммерческих предложений или организации встречи. Мы готовы ответить на все ваши вопросы и помочь в реализации ваших проектов.",
         seo_contacts_keys:
@@ -363,32 +363,32 @@ export default defineNuxtPlugin(({ vueApp }) => {
         num_3: "3",
         num_4: "4",
 
-        seo_index_title: "Jahon Invest Holding",
+        seo_index_title: "Jahon Invest Plast",
         seo_index_desc:
           "Jahon Invest Group is a leading holding company specializing in integrated solutions in the field of construction, development of residential complexes and production of PVC products and plastic products. We create modern living spaces, high-quality building materials and innovative PVC products, meeting the needs of our customers in the field of housing, industry and consumer goods. Our mission is to build long-term relationships with customers and create products that meet high standards of quality and reliability.",
         seo_index_keys:
           "construction, residential complexes, PVC products, plastic products, engineering solutions, building materials, infrastructure, living spaces, plastic products, industry, manufacturing holding, innovation, quality, reliability.",
-        seo_directions_title: "Jahon Invest Holding | Directions",
+        seo_directions_title: "Jahon Invest Plast | Directions",
         seo_directions_desc:
           "Jahon Invest Group is a leading holding company specializing in integrated solutions in the field of construction, development of residential complexes and production of PVC products and plastic products. Our subsidiaries are Modern City Construct, Premium Pipe Plast and Jahon Invest Plast.",
         seo_directions_keys:
           "Modern City Construct, Premium Pipe Plast, Jahon Invest Plast, construction, residential complexes, PVC products, plastic products, engineering solutions, building materials, infrastructure, living spaces, plastic products, industry, manufacturing holding",
-        seo_about_title: "Jahon Invest Holding | About the company",
+        seo_about_title: "Jahon Invest Plast | About the company",
         seo_about_desc:
-          "Learn more about Jahon Invest Group Holding, a leading company specializing in construction, development of residential complexes, production of PVC products and plastic products. We combine innovative technologies and a professional approach to create high-quality and reliable solutions that meet the needs of our customers in various industries and housing.",
+          "Learn more about Jahon Invest Plast, a leading company specializing in construction, development of residential complexes, production of PVC products and plastic products. We combine innovative technologies and a professional approach to create high-quality and reliable solutions that meet the needs of our customers in various industries and housing.",
         seo_about_keys:
           "Jahon Invest Group, construction, residential complexes, PVC products, plastic products, innovation, quality, reliability, engineering solutions, industry, development, building materials, housing construction",
-        seo_gallery_title: "Jahon Invest Holding | Gallery",
+        seo_gallery_title: "Jahon Invest Plast | Gallery",
         seo_gallery_desc:
-          "Learn more about Jahon Invest Group Holding, a leading company specializing in construction, development of residential complexes, production of PVC products and plastic products. We combine innovative technologies and a professional approach to create high-quality and reliable solutions that meet the needs of our customers in various industries and housing.",
+          "Learn more about Jahon Invest Group Plast, a leading company specializing in construction, development of residential complexes, production of PVC products and plastic products. We combine innovative technologies and a professional approach to create high-quality and reliable solutions that meet the needs of our customers in various industries and housing.",
         seo_gallery_keys:
           "Jahon Invest Group, construction, residential complexes, PVC products, plastic products, innovation, quality, reliability, engineering solutions, industry, development, building materials, housing construction",
-        seo_news_title: "Jahon Invest Holding | News",
+        seo_news_title: "Jahon Invest Plast | News",
         seo_news_desc:
-          "Find out the latest news and events from the Jahon Invest Group holding. We regularly update our news to provide you with the most up-to-date information about our activities, new projects, achievements and innovations in the field of construction, residential complexes, production of PVC products and plastic products. Follow our news to keep up to date with the latest developments and successes of the company.",
+          "Find out the latest news and events from the Jahon Invest Plast holding. We regularly update our news to provide you with the most up-to-date information about our activities, new projects, achievements and innovations in the field of construction, residential complexes, production of PVC products and plastic products. Follow our news to keep up to date with the latest developments and successes of the company.",
         seo_news_keys:
-          "news, events, Jahon Invest Group holding, construction, residential complexes, PVC products, plastic products, innovations, projects, achievements, updates",
-        seo_contacts_title: "Jahon Invest Holding | Contacts",
+          "news, events, Jahon Invest Plast holding, construction, residential complexes, PVC products, plastic products, innovations, projects, achievements, updates",
+        seo_contacts_title: "Jahon Invest Plast | Contacts",
         seo_contacts_desc:
           "Contact us for more information about our activities and services. Jahon Invest Group Holding offers a wide range of services in the field of construction, housing construction, production of PVC products and plastic products. Our contact information will help you to contact us for advice, request commercial offers or arrange a meeting. We are ready to answer all your questions and help you implement your projects.",
         seo_contacts_keys:
