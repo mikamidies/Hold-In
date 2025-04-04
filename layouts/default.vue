@@ -1,8 +1,8 @@
 <template>
   <div id="main_page" class="" :class="`bg-${bg_color} text-${color}`">
-    <div class="warn">
+    <!-- <div class="warn">
       {{ $t("warn_test") }}
-    </div>
+    </div> -->
     <Header v-if="load == true"></Header>
     <div class="flex-1">
       <NuxtPage />
